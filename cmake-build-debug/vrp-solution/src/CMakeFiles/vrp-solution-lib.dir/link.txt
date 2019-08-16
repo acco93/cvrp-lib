@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvrp-solution-lib.a  CMakeFiles/vrp-solution-lib.dir/Solution.cpp.o CMakeFiles/vrp-solution-lib.dir/Solution_initializer.cpp.o CMakeFiles/vrp-solution-lib.dir/Solution_parsers.cpp.o
+/usr/bin/ranlib libvrp-solution-lib.a

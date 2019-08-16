@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfixed-size-value-stack-lib.a  CMakeFiles/fixed-size-value-stack-lib.dir/FixedSizeValueStack.cpp.o
+/usr/bin/ranlib libfixed-size-value-stack-lib.a

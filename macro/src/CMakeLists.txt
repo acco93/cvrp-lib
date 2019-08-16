@@ -1,0 +1,1 @@
+add_library(macro-lib macro.hpp macro.cpp)

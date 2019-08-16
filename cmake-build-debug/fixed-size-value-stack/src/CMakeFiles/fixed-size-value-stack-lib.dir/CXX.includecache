@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/acco/CLionProjects/cvrp-lib/fixed-size-value-stack/src/FixedSizeValueStack.cpp
+FixedSizeValueStack.hpp
+/home/acco/CLionProjects/cvrp-lib/fixed-size-value-stack/src/FixedSizeValueStack.hpp
+
+/home/acco/CLionProjects/cvrp-lib/fixed-size-value-stack/src/FixedSizeValueStack.hpp
+cassert
+-
+functional
+-
+

@@ -1,0 +1,1 @@
+add_library(raw-mm-lib mm.hpp mm.cpp)

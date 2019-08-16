@@ -1,0 +1,1 @@
+add_library(fixed-size-value-stack-lib FixedSizeValueStack.cpp FixedSizeValueStack.hpp)
