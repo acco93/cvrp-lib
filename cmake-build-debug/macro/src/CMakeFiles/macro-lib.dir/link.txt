@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmacro-lib.a  CMakeFiles/macro-lib.dir/macro.cpp.o
-/usr/bin/ranlib libmacro-lib.a

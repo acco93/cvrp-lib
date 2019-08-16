@@ -1,2 +1,0 @@
-/usr/bin/ar qc libraw-mm-lib.a  CMakeFiles/raw-mm-lib.dir/mm.cpp.o
-/usr/bin/ranlib libraw-mm-lib.a

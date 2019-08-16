@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvrp-instance-lib.a  CMakeFiles/vrp-instance-lib.dir/Instance.cpp.o CMakeFiles/vrp-instance-lib.dir/Instance_parsers.cpp.o CMakeFiles/vrp-instance-lib.dir/AbstractInstance.cpp.o
-/usr/bin/ranlib libvrp-instance-lib.a
