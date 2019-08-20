@@ -57,7 +57,7 @@ public:
 
         for(auto i = get_vertices_begin(); i < get_vertices_end(); i++) {
 
-            std::sort(all_vertices.begin(), all_vertices.end(), [this, i](auto j, auto k){ return get_cost(i,j) < get_cost(i, k);});
+            std::sort(all_vertices.begin(), all_vertices.end(), [this, i](auto j, auto k){ return this->get_cost(i,j) < this->get_cost(i, k);});
 
             neighbors[i] = all_vertices;
 
