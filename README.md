@@ -22,7 +22,7 @@ The project consists of a set of cmake sub-projects. In particular, the main one
 
 The `AbstractInstance` class defines the interface describing the functionalities an Instance-like class must implement. Both `Instance` and `SubInstance` inherit from `AbstractInstance` providing a concrete implementation for the required functionalities.
 
-The `Instance` class represents an instance entity and can be easily be instantiated as follows
+The `Instance` class represents an instance entity and can be easily instantiated as follows
 
 ```cpp
 auto instance = Instance("path-to-file");
