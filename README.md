@@ -3,23 +3,22 @@ An entry level set of classes for fast-prototyping CVRP algorithms.
 
 **Table of contents**
 
-*   [Benchmark instances](#instances)
-*   [Project structure](#project)
-*   [The `AbstractInstance`, `Instance` and `SubInstance` classes](#instance_class)
-*   [The `Solution` class](#solution_class)
-*   [The Clarke and Wright savings algorithm](#clarke_wright)
-*   [Software](#software)
+*   [Benchmark instances](#benchmark-instances)
+*   [Project structure](#project-structure)
+*   [The `AbstractInstance`, `Instance` and `SubInstance` classes](#the-abstractinstance-instance-and-subinstance-classes)
+*   [The `Solution` class](#the-solution-class)
+*   [The Clarke and Wright savings algorithm](#the-clarke-and-wright-savings-algorithm)
 *   [License](#license)
 
-**Benchmark instances**
+#### Benchmark instances
 
 The most important benchmark instances used in the literature can be downloaded from the [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/) website. I've been mainly working with the most recent Uchoa et al. (2014) and Arnold, Gendreau and Sörensen (2017) datasets.
 
-**Project structure**
+#### Project structure**
 
 The project consists of a set of cmake sub-projects. In particular, the main ones are contained in the `vrp-instance` and `vrp-solution` directories. The `vrp-instance` directory contains a set of classes to handle CVRP instances. Following the same philosophy, the `vrp-solution` directory provides a set of classes to represent and manage CVRP solutions. The usage of those classes is the main topic of this document and it is described in the next sections.
 
-**`AbstractInstance`, `Instance` and `SubInstance` classes**
+#### The `AbstractInstance`, `Instance` and `SubInstance` classes
 
 The `AbstractInstance` class defines the interface describing the functionalities an Instance-like class must implement. Both `Instance` and `SubInstance` inherit from `AbstractInstance` providing a concrete implementation for the required functionalities.
 
@@ -85,7 +84,7 @@ auto sub_instance = SubInstance(instance, subset);
 ```
 
 
-**The `Solution` class**
+#### The `Solution` class
 
 The `Solution` class represents a solution entity and provides a set of functionalities to manage it. The internal representation mainly consists of the classical pair of previous and next arrays with some additional fancy stuff. Note that this may not be the best representation to work with when developing population-based algorithms or when it is necessary to support a broad range of VRP variants. Apart from that, it is quite efficient when dealing with the vanilla CVRP.
 
@@ -186,7 +185,7 @@ auto vertices = solution.get_unstaged_changes();
 solution.commit();
 ```
 
-**The Clarke and Wright savings algorithm**
+#### The Clarke and Wright savings algorithm
 
 The implementation of the basic Clarke and Wright savings algorithm becomes trivial once the `Solution` class is available. A possible code might be as follows
 
@@ -250,10 +249,7 @@ solution.is_feasible();
 
 Note that the `Solution` base class provides itself a slightly fancier implementation for the Clarke and Wright savings algorithm.
 
-**Software**
 
-The source code can be downloaded from [my github repository](https://github.com/acco93/cvrp-lib).
-
-**License**
+#### License
 
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
