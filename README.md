@@ -14,7 +14,7 @@ An entry level set of classes for fast-prototyping CVRP algorithms.
 
 The most important benchmark instances used in the literature can be downloaded from the [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/) website. I've been mainly working with the most recent Uchoa et al. (2014) and Arnold, Gendreau and Sörensen (2017) datasets.
 
-#### Project structure**
+#### Project structure
 
 The project consists of a set of cmake sub-projects. In particular, the main ones are contained in the `vrp-instance` and `vrp-solution` directories. The `vrp-instance` directory contains a set of classes to handle CVRP instances. Following the same philosophy, the `vrp-solution` directory provides a set of classes to represent and manage CVRP solutions. The usage of those classes is the main topic of this document and it is described in the next sections.
 
@@ -22,7 +22,7 @@ The project consists of a set of cmake sub-projects. In particular, the main one
 
 The `AbstractInstance` class defines the interface describing the functionalities an Instance-like class must implement. Both `Instance` and `SubInstance` inherit from `AbstractInstance` providing a concrete implementation for the required functionalities.
 
-The `Instance` class represents an instance entity and can be easily be instantiated as follows
+The `Instance` class represents an instance entity and can be easily instantiated as follows
 
 ```cpp
 auto instance = Instance("path-to-file");
