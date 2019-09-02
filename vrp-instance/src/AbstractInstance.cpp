@@ -11,9 +11,9 @@ void serialize_json(const AbstractInstance& instance, std::string& path);
 void AbstractInstance::serialize(std::string &path, bool json) {
 
     if(json) {
-        serialize_TSPLIB(*this, path);
-    } else {
         serialize_json(*this, path);
+    } else {
+        serialize_TSPLIB(*this, path);
     }
 
 }
