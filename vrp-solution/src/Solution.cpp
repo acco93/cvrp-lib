@@ -20,6 +20,9 @@ Solution::Solution(AbstractInstance &instance) :
         depot_node({Solution::dummy_route, 0}),
         routes_list(new RouteNode[max_number_routes]),
         customers_list(new CustomerNode[instance.get_vertices_num()]) {
+
+    reset();
+    
 }
 
 
